@@ -1,0 +1,37 @@
+.waves-container{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    height: 500px;
+}
+.waves-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.waves-left{
+    position: relative;
+    left: -100px;
+    transition: all 0.5s ease;
+    
+}
+.waves-right{
+    position: relative;
+    right: -100px;
+    transition: all 0.5s ease;
+}
+
+.waves-left img{
+    height: 500px;
+}
+.waves-right img{
+    transform: rotate(180deg);
+    height: 500px;
+    margin-top: -60px;
+}
+
+@media (max-width:480px){
+    .waves-left img,
+    .waves-right img{
+        height: 700px;
+    }
+}

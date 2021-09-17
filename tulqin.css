@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .tulqinlar {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    background-color: rgba(14,147,255,.1);
+  }
+  .tulqinlar .tulqin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://mayaplast.uz/wp-content/themes/mayaplast/assets/theme/images/footer-top.png");
+    background-size: 1000px 100px;
+  }
+  .tulqin1 {
+    animation: animate 20s linear infinite;
+  }
+  @keyframes animate {
+      0%{
+          background-position-x: 0;
+      }
+      100%{
+          background-position-x: 1000px;
+      }
+  }
+  

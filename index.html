@@ -1,0 +1,777 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./waves.css" />
+    <link rel="stylesheet" href="/keyingi.css" />
+    <link rel="stylesheet" href="./tulqin.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="header">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <div class="hamburger-cont">
+            <i class="fas fa-bars" id="hamburger"></i>
+          </div>
+        </label>
+        <div class="logo">
+          <img
+            class="logo-img"
+            src="https://mayaplast.uz/wp-content/themes/mayaplast/assets/images/logo/logo.png"
+            alt=""
+          />
+        </div>
+
+        <ul>
+          <li><a href="">О нас</a></li>
+          <li><a href=""> Каталог</a></li>
+          <li><a href="">Образцы</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li><a href="">Новости</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="slideshow-container">
+      <div class="mySlides fade" id="first-slide">
+        <div class="umumiy">
+          <div class="slide-text">
+            <h2>Пакеты</h2>
+            <p>
+              Пакетов с логотипом – услуга сегодня более чем востребованная. В
+              самом деле, при нынешнем росте конкуренции было бы глупо не
+              воспользоваться данным инструментом продвижения.
+            </p>
+            <div class="slide-text-btn">
+              <button>Подробнее</button>
+            </div>
+          </div>
+          <div class="slide-image" id="scene">
+            <div data-depth="0.6">
+              <img
+                src="https://mayaplast.uz/wp-content/uploads/2021/07/slider-image01737623.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="orqa-container">
+            <div class="orqa-wrapper">
+              <h2>Пакеты</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade" id="second-slide">
+        <div class="umumiy">
+          <div class="slide-text">
+            <h2>Пакет ZIP-LOCK</h2>
+            <p>
+              Zip-пакет — это универсальный тип упаковки, оснащенный
+              специальной, плотно закрывающейся застежкой, которая гарантирует
+              стопроцентную герметичность.
+            </p>
+            <div class="slide-text-btn">
+              <button>Подробнее</button>
+            </div>
+          </div>
+          <div class="slide-image" id="scene3">
+            <div data-depth="0.6">
+              <img
+                src="https://mayaplast.uz/wp-content/uploads/2021/06/slider-image-02.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="orqa-container">
+            <div class="orqa-wrapper">
+              <h2>Пакет ZIP-LOCK</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade" id="third-slide">
+        <div class="umumiy">
+          <div class="slide-text">
+            <h2>Подушка флоу-пак</h2>
+            <p>
+              Такая упаковка используется для огромного множества товарных групп
+              в пищевой и непищевой промышленности.
+            </p>
+            <div class="slide-text-btn">
+              <button>Подробнее</button>
+            </div>
+          </div>
+          <div class="slide-image" id="scene2">
+            <div data-depth="0.6">
+              <img
+                src="https://mayaplast.uz/wp-content/uploads/2021/06/slider-image-03.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="orqa-container">
+            <div class="orqa-wrapper">
+              <h2>Подушка флоу-пак</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a
+        class="prev"
+        onclick="plusSlides(-1)"
+        onmouseover="hoverEffect()"
+        onmouseleave="moveEffect()"
+        >&#10094;</a
+      >
+      <a
+        class="next"
+        onclick="plusSlides(1)"
+        onmouseover="hoverEffect2()"
+        onmouseleave="moveEffect2()"
+        >&#10095;</a
+      >
+    </div>
+    <br />
+    <div style="text-align: center; display: none">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="waves-container">
+      <div class="waves-wrapper">
+        <div class="waves-left" id="wave-left-id">
+          <img id="wave-left-img" src="red.png" alt="" />
+        </div>
+        <div class="waves-right" id="wave-right-id">
+          <img id="wave-right-img" src="orange.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="after-container">
+      <div class="after-wrapper">
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 800 63"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xml:space="preserve"
+          xmlns:serif="http://www.serif.com/"
+          style="
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            stroke-linejoin: round;
+            stroke-miterlimit: 2;
+          "
+        >
+          <g transform="matrix(1,0,0,1,0,-335)">
+            <path
+              d="M0,397.865C0,397.865 100.834,398.124 150.778,397.891C200.722,397.657 290.813,353.8 400,354C509.187,354.2 597.81,398.083 647.611,397.974C697.411,397.865 800,398 800,398L0,397.865Z"
+              style="fill: white"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <div class="after-wrapper-2">
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+
+    <div class="chem-container" data-aos="fade-down">
+      <div class="chem-container-wrapper">
+        <div class="chem-text">
+          <div class="chem-text-h2">
+            <h2 id="chem-h2">Чем мы занимаемся</h2>
+            <p>
+              ООО «MAYA PLAST» – это производство упаковочного материала из
+              BOPP, PVC, PE, PET пленок способом глубокой (ротогравюрной)
+              печати. Основной деятельностью нашей компании является
+              производство упаковочного материала для разных видов пищевой и
+              иной продукции.
+            </p>
+          </div>
+        </div>
+        <div class="chem-image">
+          <img
+            src="https://mayaplast.uz/wp-content/uploads/2021/06/bopp_ambalajlar_1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="kto-container" data-aos="fade-down">
+      <div class="kto-container-wrapper">
+        <div class="kto-image">
+          <img
+            src="https://mayaplast.uz/wp-content/uploads/2021/06/bopp_ambalajlar_2.png"
+            alt=""
+          />
+        </div>
+        <div class="kto-text">
+          <div class="kto-text-h2">
+            <h2 id="kto-h2">Кто мы</h2>
+            <p>
+              Мы производим как однослойные упаковочные пленки, так и
+              ламинированные (многослойные) упаковочные материалы, позволяющие
+              сохранить товар в течении необходимого Вам срока годности. Мы
+              создаем красивые, премиальные работы. Мы знаем об упаковке все.
+              Это доказано не только многолетним опытом работы, но и постоянным
+              спросом на товары, упаковку для которых изготавливает именно наша
+              компания
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partner-container" data-aos="fade-down">
+      <div class="partner-container-wrapper">
+        <div class="partner-text">
+          <h2>Наши партнеры:</h2>
+        </div>
+        <div class="partner-image">
+          <img
+            src="https://mayaplast.uz/wp-content/uploads/2021/06/flags.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="obshiy-button" id="obshiy-btn-1" data-aos="fade-down">
+      <div class="obshiy-wrapper">
+        <button class="obshiy-btn" id="obshiy-btn-btn-1">Подробнее</button>
+      </div>
+    </div>
+
+    <div class="burama" id="before-catalog" >
+      <div class="burama-wrapper">
+        <svg width="100%" height="100%" viewBox="0 0 800 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+          <g transform="matrix(1,0,0,1,0,-335)">
+              <path d="M0,397.865C0,397.865 100.834,398.124 150.778,397.891C200.722,397.657 290.813,353.8 400,354C509.187,354.2 597.81,398.083 647.611,397.974C697.411,397.865 800,398 800,398L0,397.865Z" style="fill:white;"></path>
+          </g>
+      </svg>
+      </div>
+    </div>
+
+    <div class="catalog" id="catalog-1" data-aos="fade-down">
+      <div class="catalog-wrapper">
+        <div class="catalog-header">
+          <div class="catalog-header-wrapper">
+            <h2>Каталог</h2>
+          </div>
+        </div>
+        <div class="catalog-body">
+          <div class="catalog-body-wrapper">
+            <div class="catalog-left">
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/08/stefan-copy-220x300.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Пакеты</h2>
+                  <p>
+                    Наша фирма лидер в производстве и реализации полиэтиленовых
+                    пакетов. Сферы использования полиэтиленовых пакетов
+                    Предлагаемые полиэтиленовые пакеты имеют применяются в
+                    торговле, дабы отстаивать от…
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/08/333333-216x300.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для средство личной гигиены</h2>
+                  <p>
+                    Рынок средств личной гигиены включает: средства по уходу за
+                    телом, ватно-гигиеническую продукцию, бумажную продукцию,
+                    специальные средства детской и женской гигиены.
+                    Производители средств…
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/06/upakovka-dlya-sredstvo-lichnoy-gigieni.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для бытовой химии</h2>
+                  <p>
+                    К бытовой химии относится большой спектр продукции:
+                    стиральный порошок, гелеобразные и пастообразные чистящие
+                    средства, капсулы для посудомоечных машин, моющие средства
+                    и…
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-right">
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/08/11111111111111111111111-176x300.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Пакеты для строительных смесей</h2>
+                  <p>
+                    Упаковка сыпучих строительных смесей необходима для их
+                    надежной защиты от внешних факторов, чтобы обеспечить
+                    гарантированный срок хранения даже при неблагоприятных
+                    условиях…
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/06/upakovka-dlya-pishevix-produktov.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для пищевых продуктов</h2>
+                  <p>
+                    К хранению и реализации пищевых продуктов предъявляются
+                    жесткие требования. Делается это с целью обеспечения
+                    безопасности потребителей, защиты их здоровья и жизни….
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/06/upakovka-dlya-tekstilnix-izdeliy.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для текстильных изделий</h2>
+                  <p>
+                    Пакеты из пленки презентабельны, имеют отличные барьерные
+                    свойства, защищают изделия от пыли и влаги. Для упаковки
+                    одежды (футболок, рубашек и пр.)…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="obshiy-button">
+          <div class="obshiy-wrapper">
+            <button class="obshiy-btn" id="obshiy-btn-2">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="catalog" data-aos="fade-down">
+      <div class="catalog-wrapper">
+        <div class="catalog-header">
+          <div class="catalog-header-wrapper">
+            <h2>Образцы</h2>
+          </div>
+        </div>
+        <div class="catalog-body">
+          <div class="catalog-body-wrapper">
+            <div class="catalog-left">
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/07/718231487ee20acd94cd74e6a378dcfa-copy.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Пакеты</h2>
+                  <p>
+                    Наша фирма лидер в производстве и реализации полиэтиленовых
+                    пакетов. Сферы использования полиэтиленовых пакетов
+                    Предлагаемые полиэтиленовые пакеты имеют применяются в
+                    торговле, дабы отстаивать от…
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/07/80196-5de7d13a24cf6a828e002b77681499be-1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для средство личной гигиены</h2>
+                  <p>
+                    Рынок средств личной гигиены включает: средства по уходу за
+                    телом, ватно-гигиеническую продукцию, бумажную продукцию,
+                    специальные средства детской и женской гигиены.
+                    Производители средств…
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/07/washing-powder-tide-png-tide-png-2480_3508-1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для бытовой химии</h2>
+                  <p>
+                    К бытовой химии относится большой спектр продукции:
+                    стиральный порошок, гелеобразные и пастообразные чистящие
+                    средства, капсулы для посудомоечных машин, моющие средства
+                    и…
+                  </p>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/06/upakovka-ketchupa-177x300.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Пакеты</h2>
+                  <p>
+                    Наша фирма лидер в производстве и реализации полиэтиленовых
+                    пакетов. Сферы использования полиэтиленовых пакетов
+                    Предлагаемые полиэтиленовые пакеты имеют применяются в
+                    торговле, дабы отстаивать от…
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/08/333333-216x300.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для средство личной гигиены</h2>
+                  <p>
+                    Рынок средств личной гигиены включает: средства по уходу за
+                    телом, ватно-гигиеническую продукцию, бумажную продукцию,
+                    специальные средства детской и женской гигиены.
+                    Производители средств…
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/06/upakovka-dlya-sredstvo-lichnoy-gigieni.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для бытовой химии</h2>
+                  <p>
+                    К бытовой химии относится большой спектр продукции:
+                    стиральный порошок, гелеобразные и пастообразные чистящие
+                    средства, капсулы для посудомоечных машин, моющие средства
+                    и…
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-right">
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/08/11111111111111111111111-176x300.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Пакеты для строительных смесей</h2>
+                  <p>
+                    Упаковка сыпучих строительных смесей необходима для их
+                    надежной защиты от внешних факторов, чтобы обеспечить
+                    гарантированный срок хранения даже при неблагоприятных
+                    условиях…
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/06/upakovka-dlya-pishevix-produktov.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для пищевых продуктов</h2>
+                  <p>
+                    К хранению и реализации пищевых продуктов предъявляются
+                    жесткие требования. Делается это с целью обеспечения
+                    безопасности потребителей, защиты их здоровья и жизни….
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/06/upakovka-dlya-tekstilnix-izdeliy.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для текстильных изделий</h2>
+                  <p>
+                    Пакеты из пленки презентабельны, имеют отличные барьерные
+                    свойства, защищают изделия от пыли и влаги. Для упаковки
+                    одежды (футболок, рубашек и пр.)…
+                  </p>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/08/11111111111111111111111-176x300.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Пакеты для строительных смесей</h2>
+                  <p>
+                    Упаковка сыпучих строительных смесей необходима для их
+                    надежной защиты от внешних факторов, чтобы обеспечить
+                    гарантированный срок хранения даже при неблагоприятных
+                    условиях…
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/06/upakovka-dlya-pishevix-produktov.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для пищевых продуктов</h2>
+                  <p>
+                    К хранению и реализации пищевых продуктов предъявляются
+                    жесткие требования. Делается это с целью обеспечения
+                    безопасности потребителей, защиты их здоровья и жизни….
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog-item">
+                <div class="catalog-item-img">
+                  <div class="catalog-item-img-wrapper">
+                    <img
+                      src="https://mayaplast.uz/wp-content/uploads/2021/06/upakovka-dlya-tekstilnix-izdeliy.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="catalog-item-text">
+                  <h2>Упаковки для текстильных изделий</h2>
+                  <p>
+                    Пакеты из пленки презентабельны, имеют отличные барьерные
+                    свойства, защищают изделия от пыли и влаги. Для упаковки
+                    одежды (футболок, рубашек и пр.)…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="burama" data-aos="fade-down">
+      <div class="burama-wrapper">
+        <svg width="100%" height="100%" viewBox="0 0 800 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+          <g transform="matrix(1,0,0,1,0,-335)">
+              <path d="M0,397.865C0,397.865 100.834,398.124 150.778,397.891C200.722,397.657 290.813,353.8 400,354C509.187,354.2 597.81,398.083 647.611,397.974C697.411,397.865 800,398 800,398L0,397.865Z" style="fill:white;"></path>
+          </g>
+      </svg>
+      </div>
+    </div>
+    <div class="clients" id="clients-id" data-aos="fade-right">
+      <div class="clients-wrapper">
+        <div class="clients-text">
+          <h2>Клиенты</h2>
+        </div>
+        <div class="clients-images">
+          <div class="clients-image-wrapper">
+            <img
+              src="https://mayaplast.uz/wp-content/uploads/2021/06/logo-printuz.png"
+              alt=""
+            />
+            <img
+              src="https://mayaplast.uz/wp-content/uploads/2021/06/logo-artel.png"
+              alt=""
+            />
+            <img
+              src="https://mayaplast.uz/wp-content/uploads/2021/06/logo-feed.png"
+              alt=""
+            />
+            <img
+              src="https://mayaplast.uz/wp-content/uploads/2021/06/logo-spring.png"
+              alt=""
+            />
+            <img
+              src="https://mayaplast.uz/wp-content/uploads/2021/06/logo-bonito.png"
+              alt=""
+            />
+            <img
+              src="https://mayaplast.uz/wp-content/uploads/2021/06/logo-lacore.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tulqinlar" id="tulqinlar-id" >
+      <div class="tulqin tulqin1" id="tulqin-id"></div>
+  </div>
+    <div class="last" id="last-id" data-aos="fade-right">
+      <div class="last-wrapper">
+        <div class="last-text">
+          <h2>Связаться с нами</h2>
+        </div>
+        <div class="last-main">
+          <div class="last-left">
+            <form action="">
+              <input type="text" placeholder="Ф.И.О" class="fio" />
+              <input
+                type="text"
+                placeholder="Электронный адрес"
+                class="address"
+              />
+              <input type="text" placeholder="Телефон" class="telefon" />
+              <input type="text" placeholder="Введите сообщение" id="sms" />
+            </form>
+            <div class="send-btn-container">
+              <div class="send-btn-wrapper">
+                <button class="send-message">Отправить</button>
+              </div>
+            </div>
+          </div>
+          <div class="last-right">
+            <div class="last-address">
+              <div class="gmail">
+                <i class="fas fa-envelope"></i>
+                <p>u.davronov.1999@gmail.com</p>
+              </div>
+              <div class="phone">
+                <i class="fas fa-phone-alt"></i>
+                <p>+9989 9 449 44 21</p>
+              </div>
+            </div>
+            <div class="last-map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d6448aed0674fb236f5fb2db2074484fe7ecb0bf03cf0a66373f5ba0b442095&source=constructor"
+                frameborder="0"
+                width="340"
+                height="300"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+      var scene = document.getElementById("scene");
+      var parallaxInstance = new Parallax(scene);
+
+      var scene2 = document.getElementById("scene2");
+      var parallaxInstance2 = new Parallax(scene2);
+
+      var scene3 = document.getElementById("scene3");
+      var parallaxInstance3 = new Parallax(scene3);
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
